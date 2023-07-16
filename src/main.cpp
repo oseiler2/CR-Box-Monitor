@@ -88,6 +88,7 @@ void modelUpdatedEvt(uint16_t mask, TrafficLightStatus oldStatus, TrafficLightSt
     if (mask & M_PM2_5) (*doc)["pm2.5"] = model->getPM2_5();
     if (mask & M_PM4) (*doc)["pm4"] = model->getPM4();
     if (mask & M_PM10) (*doc)["pm10"] = model->getPM10();
+    (*doc)["fanPwm"] = fan->getFanPwm();
     mqtt::publishSensors(doc);
   }
 }
