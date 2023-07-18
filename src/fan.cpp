@@ -18,7 +18,7 @@ CLK src         max freq  max res
 1 MHz REF_TICK    1 KHz   10 bit
 */
 
-#define PWM_FREQ            10000
+#define PWM_FREQ            40000
 #define PWM_RESOLUTION      8
 
 /*
